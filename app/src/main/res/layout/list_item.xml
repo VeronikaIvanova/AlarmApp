@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <TextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/textViewAlarm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:padding="5dp"
+        android:text="TextView"
+        android:textSize="24sp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    </TextView>
+
+    <Button
+        android:id="@+id/buttonEdit"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="changeToEditActivity"
+        android:text="@string/edit"
+        tools:ignore="UnknownId"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/buttonDel"
+        android:layout_toStartOf="@+id/buttonDel" />
+
+    <ImageButton
+        android:id="@+id/buttonDel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="delete"
+        android:onClick="removeAlarmOnClickHandler"
+        android:src="@android:drawable/ic_menu_delete"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        />
+
+    <Switch
+        android:id="@+id/switchOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewAlarm"
+        android:layout_centerHorizontal="true"
+        android:checked="true"/>
+
+</RelativeLayout>

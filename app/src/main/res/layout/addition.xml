@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Settings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:baselineAligned="false">
+
+    <TextView
+        android:id="@+id/textTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/time"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="99dp"
+        android:layout_weight="0.19"
+        android:visibility="visible" />
+
+    <CheckBox
+        android:id="@+id/checkboxEveryday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.11"
+        android:text="@string/everyday"
+        android:textSize="30sp" />
+
+    <Space
+        android:layout_width="394dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.12" />
+
+    <TextView
+        android:id="@+id/textMelody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/melody"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <RadioGroup
+        android:layout_width="334dp"
+        android:layout_height="100dp">
+
+        <RadioButton
+            android:id="@+id/radiobtnImperial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.09"
+            android:checked="false"
+            android:text="@string/imperial"
+            android:textSize="30sp" />
+
+        <RadioButton
+            android:id="@+id/radiobtnSilence"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="@string/silence"
+            android:textSize="30sp" />
+
+    </RadioGroup>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="21dp" />
+
+</LinearLayout>

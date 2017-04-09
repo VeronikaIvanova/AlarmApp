@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">AlarmApp</string>
+    <string name="time">Time</string>
+    <string name="everyday">Everyday</string>
+    <string name="imperial">Imperial</string>
+    <string name="melody">Melody</string>
+    <string name="ok">Ok</string>
+    <string name="silence">Silence</string>
+    <string name="add">Add</string>
+    <string name="additionHeader">New alarm</string>
+    <string name="edit">edit</string>
+    <string name="edit_alarm">Edit alarm</string>
+    <string name="welcome">Hello!  You have no enabled alarms. Please add a new one.</string>
+    <string name="send">Send</string>
+</resources>
